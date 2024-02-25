@@ -4,8 +4,8 @@ import { AppService } from './app.service';
 @Controller()
 export class AppController {
   private twilio = require('twilio');
-  private accountSid = 'ACff99dfe9ae15bfbdb666967c12883e3d';
-  private authToken = 'e86c6ae16c5636c97f4b9f302a55a585';
+  private accountSid = key;
+  private authToken = token;
   private client: any;
   constructor(private readonly appService: AppService) {
     this.client = this.twilio(this.accountSid, this.authToken);
