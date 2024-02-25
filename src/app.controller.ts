@@ -16,8 +16,8 @@ export class AppController {
     this.client.messages
       .create({
         body: 'Hello from twilio-node',
-        to: '+84367695329', // Text this number
-        from: '+13858327711', // From a valid Twilio number
+        to: '+84-phone-to', // Text this number
+        from: '+13-phone-send', // From a valid Twilio number
       })
       .then((message) => console.log(message.sid))
       .catch((error) => console.error(error));
